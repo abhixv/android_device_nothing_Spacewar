@@ -20,13 +20,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Spacewar/device.mk)
 
 # Inherit some common PixysOS stuff.
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit my custom setup for unofficial
-$(call inherit-product, vendor/extras/config.mk)
+#$(call inherit-product, vendor/extras/config.mk)
 
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Sakura stuff
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := abhixv
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_BUILD_TYPE := gapps
 
 # PixysOS Properties
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
@@ -39,7 +45,7 @@ TARGET_INCLUDE_OEM_CAMERA := true
 TARGET_INCLUDE_CARRIER_SETTINGS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := pixys_Spacewar
+PRODUCT_NAME := lineage_Spacewar
 PRODUCT_DEVICE := Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063

@@ -155,7 +155,6 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libvolumelistener \
     sound_trigger.primary.lahaina \
-    libspatialaudio \
     libaudioroute.vendor
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
@@ -282,9 +281,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    libloc_net_iface.vendor \
-    liblocdiagiface.vendor
+    android.hardware.gnss@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
