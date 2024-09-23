@@ -37,7 +37,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -120,7 +120,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.nothing
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/pixys/config/device_framework_matrix.xml
+    vendor/styx/config/device_framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest_yupik.xml
@@ -196,7 +196,7 @@ BOARD_AVB_ENABLE := true
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 BOARD_AVB_VBMETA_SYSTEM := product system system_ext
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
-BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/security/pixys/releasekey.pem
+#BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := vendor/security/pixys/releasekey.pem
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
