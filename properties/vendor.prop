@@ -69,7 +69,7 @@ vendor.voice.path.for.pcm.voip=true
 
 # Biometrics
 ro.vendor.fingerprint.type=udfps_optical
-ro.vendor.fingerprint.sensor_location=540|2186|93
+ro.vendor.fingerprint.sensor_location=540|2170|98
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
